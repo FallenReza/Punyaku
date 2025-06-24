@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reza Rabbani Rachim - UI/UX Designer & Developer</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons for Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            color: #F3F4F6; /* text-gray-200 */
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #3B82F6; /* bg-blue-500 */
+            margin-top: 12px;
+            border-radius: 2px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ===== HEADER / NAVIGATION (DIPERBARUI) ===== -->
+    <header id="header" class="bg-gray-900 bg-opacity-80 backdrop-blur-md fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+            <a href="#" class="text-xl font-bold text-white">Reza R. Rachim</a>
+            <!-- Navigasi desktop sekarang di tengah -->
+            <nav class="hidden md:flex space-x-8 absolute left-1/2 -translate-x-1/2">
+                <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#projects" class="block py-2 px-6 text-sm hover:bg-gray-800 text-center">Projects</a>
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-gray-800 text-center">About</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-800 text-center">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO SECTION ===== -->
+        <section id="home" class="min-h-screen flex items-center pt-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+                    UI/UX Designer & <span class="text-blue-400">Developer</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    I build seamless digital products by bridging the gap between user needs and technical implementation.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105">
+                        View My Work
+                    </a>
+                    <a href="CV-Reza-Rabbani-Rachim.pdf" download class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== JOURNEY / TIMELINE SECTION (DENGAN LOGO) ===== -->
+        <section id="journey" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-3xl font-bold text-center mb-24">My Journey</h2>
+                <div class="relative max-w-3xl mx-auto">
+                    <!-- Garis vertikal timeline -->
+                    <div class="absolute left-1/2 -ml-px w-0.5 h-full bg-gray-700" aria-hidden="true"></div>
+                    
+                    <!-- Item Timeline 1 -->
+                    <div class="relative mb-16">
+                        <div class="absolute w-10 h-10 bg-gray-800 border-2 border-blue-500 rounded-full left-1/2 -ml-5 z-10 flex items-center justify-center">
+                            <i data-feather="book-open" class="w-5 h-5 text-blue-400"></i>
+                        </div>
+                        <div class="w-full md:w-1/2 md:pr-10 md:text-right">
+                            <p class="text-gray-400 font-medium">September 2022</p>
+                            <h3 class="font-bold text-white text-xl mt-1">Foundational Steps</h3>
+                            <p class="text-gray-300 mt-2">Began my Bachelor of Software Engineering, building a strong foundation in logic, algorithms, and programming.</p>
+                        </div>
+                    </div>
+                     <!-- Item Timeline 2 -->
+                    <div class="relative mb-16">
+                        <div class="absolute w-10 h-10 bg-white p-1 border-2 border-blue-500 rounded-full left-1/2 -ml-5 z-10 flex items-center justify-center">
+                            <img src="img/Hima.png" alt="Logo HIMA RPL" class="object-contain">
+                        </div>
+                        <div class="w-full md:w-1/2 md:ml-auto md:pl-10">
+                             <p class="text-gray-400 font-medium">Juli - Des 2023</p>
+                            <h3 class="font-bold text-white text-xl mt-1">Leadership Experience</h3>
+                            <p class="text-gray-300 mt-2">Served as Head of Media Division, directing content strategy and leading visual documentation for the Student Association.</p>
+                        </div>
+                    </div>
+                     <!-- Item Timeline 3 -->
+                    <div class="relative mb-16">
+                         <div class="absolute w-10 h-10 bg-gray-800 border-2 border-blue-500 rounded-full left-1/2 -ml-5 z-10 flex items-center justify-center">
+                            <i data-feather="award" class="w-5 h-5 text-blue-400"></i>
+                         </div>
+                        <div class="w-full md:w-1/2 md:pr-10 md:text-right">
+                             <p class="text-gray-400 font-medium">Nov - Des 2023</p>
+                            <h3 class="font-bold text-white text-xl mt-1">First UI/UX Competition</h3>
+                            <p class="text-gray-300 mt-2">Dived into the world of product design through an IT Competition, discovering a passion for creating intuitive user experiences.</p>
+                        </div>
+                    </div>
+                    <!-- Item Timeline 4 -->
+                    <div class="relative mb-16">
+                        <div class="absolute w-10 h-10 bg-white p-1 border-2 border-blue-500 rounded-full left-1/2 -ml-5 z-10 flex items-center justify-center">
+                           <img src="img/GDSC.png" alt="Logo GDSC" class="object-contain">
+                        </div>
+                        <div class="w-full md:w-1/2 md:ml-auto md:pl-10">
+                             <p class="text-gray-400 font-medium">Des 2023 - Jan 2024</p>
+                            <h3 class="font-bold text-white text-xl mt-1">HackFest & User Research</h3>
+                            <p class="text-gray-300 mt-2">Participated in HackFest GDSC, leading in-depth qualitative research to genuinely understand user needs.</p>
+                        </div>
+                    </div>
+                     <!-- Item Timeline 5 -->
+                     <div class="relative mb-16">
+                         <div class="absolute w-10 h-10 bg-gray-800 border-2 border-blue-500 rounded-full left-1/2 -ml-5 z-10 flex items-center justify-center">
+                            <i data-feather="layers" class="w-5 h-5 text-blue-400"></i>
+                         </div>
+                        <div class="w-full md:w-1/2 md:pr-10 md:text-right">
+                             <p class="text-gray-400 font-medium">Mei - Jun 2024</p>
+                            <h3 class="font-bold text-white text-xl mt-1">Intensive Design Projects</h3>
+                            <p class="text-gray-300 mt-2">Honed my skills by simultaneously handling two e-commerce design projects (KerjalN & Pawon Nadya).</p>
+                        </div>
+                    </div>
+                    <!-- Item Timeline 6 -->
+                    <div class="relative">
+                        <div class="absolute w-10 h-10 bg-gray-800 border-2 border-blue-500 rounded-full left-1/2 -ml-5 z-10 flex items-center justify-center">
+                            <i data-feather="cpu" class="w-5 h-5 text-blue-400"></i>
+                        </div>
+                        <div class="w-full md:w-1/2 md:ml-auto md:pl-10">
+                             <p class="text-gray-400 font-medium">2024 - Present</p>
+                            <h3 class="font-bold text-white text-xl mt-1">End-to-End Projects</h3>
+                            <p class="text-gray-300 mt-2">Leading design from start to finish for complex applications like YurShop and the MCA Foundation academic platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS SECTION ===== -->
+        <section id="projects" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-3xl font-bold text-center mb-12">Featured Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="img/YurShop.png" alt="YurShop App Mockup" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">YurShop E-commerce App</h3>
+                            <p class="text-gray-400 mb-4">Designing an end-to-end mobile experience for a fresh vegetable e-commerce application.</p>
+                            <a href="https://www.figma.com/proto/nW88yghebRE2Jp03JLSObL/OrganikShop?page-id=0%3A1&node-id=144-4&p=f&viewport=3533%2C1224%2C0.28&t=jH9ub2KJsZeTkA14-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=144%3A2" target="_blank" class="text-blue-400 font-semibold inline-flex items-center group-hover:underline">View Case Study <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="img/AnakSehat.png" alt="AnakSehat Website Mockup" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">AnakSehat (HackFest 2024)</h3>
+                            <p class="text-gray-400 mb-4">A user research-driven project to build an educational platform for stunting prevention.</p>
+                            <a href="https://anak-sehat.vercel.app/" target="_blank" class="text-blue-400 font-semibold inline-flex items-center group-hover:underline">View Case Study <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="img/MCA.png" alt="MCA Foundation Website Mockup" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">MCA Foundation Website</h3>
+                            <p class="text-gray-400 mb-4">Designing an academic platform based on real stakeholder needs through direct interviews.</p>
+                            <a href="https://www.figma.com/proto/r0dKPIpTeXcyY6Dah0qU1n/MAKOTA-CAHAYA-ABADI?page-id=0%3A1&node-id=2032-43&viewport=71%2C265%2C0.15&t=8vfYm1dlo4WAjacG-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2032%3A43" target="_blank" class="text-blue-400 font-semibold inline-flex items-center group-hover:underline">View Case Study <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT SECTION (FOTO DIHILANGKAN) ===== -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title text-3xl font-bold mb-4">About Me</h2>
+                <div class="max-w-3xl mx-auto">
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Hello! I'm Reza, a UI/UX Designer with the mind of a Software Engineer. My passion lies in creating intuitive and beautiful digital experiences that are not only user-friendly but also technically feasible.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        My background in software engineering allows me to communicate effectively with development teams, understand technical constraints, and design solutions that can be implemented efficiently without sacrificing quality. I believe the best products are born from a deep collaboration between design and development.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SKILLS SECTION (3 KOLOM) ===== -->
+        <section id="skills" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-3xl font-bold text-center mb-12">My Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center md:text-left">
+                    <!-- Kategori Design & Tools -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Design & Tools</h3>
+                        <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                            <span class="bg-gray-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">Figma</span>
+                            <span class="bg-gray-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">Miro</span>
+                            <span class="bg-gray-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">UI Design</span>
+                            <span class="bg-gray-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">UX Design</span>
+                        </div>
+                    </div>
+                    <!-- Kategori Design Processes -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Design Processes</h3>
+                        <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                            <span class="bg-gray-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">User Research</span>
+                            <span class="bg-gray-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">Wireframing</span>
+                            <span class="bg-gray-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">Prototyping</span>
+                            <span class="bg-gray-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">User Flows</span>
+                            <span class="bg-gray-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">Usability Testing</span>
+                        </div>
+                    </div>
+                    <!-- Kategori Technical Skills -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Technical Skills</h3>
+                        <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                             <span class="bg-gray-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">HTML</span>
+                             <span class="bg-gray-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">CSS</span>
+                             <span class="bg-gray-700 text-blue-300 text-sm font-medium px-4 py-2 rounded-full">Python (Basic)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CERTIFICATIONS & EXPERIENCE SECTION ===== -->
+        <section id="certifications" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-3xl font-bold text-center mb-12">Licenses & Experience</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Sertifikat 1 -->
+                    <div class="bg-gray-800 p-6 rounded-lg flex flex-col sm:flex-row items-center sm:space-x-6 text-center sm:text-left">
+                        <img src="img/python.png" alt="Python Certificate Logo" class="w-20 h-20 object-contain mb-4 sm:mb-0">
+                        <div>
+                            <h3 class="font-bold text-lg text-white">PCAP: Programming Essentials in Python</h3>
+                            <p class="text-gray-400">Python Institute, LSP BSI</p>
+                            <a href="javascript:void(0)" onclick="openModal('10220044.pdf')" class="text-blue-400 text-sm font-semibold mt-2 inline-block hover:underline">View Credential</a>
+                        </div>
+                    </div>
+                    <!-- Sertifikat 2 -->
+                    <div class="bg-gray-800 p-6 rounded-lg flex flex-col sm:flex-row items-center sm:space-x-6 text-center sm:text-left">
+                        <img src="img/GDSC.png" alt="GDSC HackFest Certificate Logo" class="w-20 h-20 object-contain mb-4 sm:mb-0">
+                        <div>
+                            <h3 class="font-bold text-lg text-white">HackFest Solution Challenge Participant</h3>
+                            <p class="text-gray-400">Google Developer Student Clubs Indonesia</p>
+                            <a href="javascript:void(0)" onclick="openModal('Porsi Kuli_Reza Rabbani Rachim_GDSC Universitas Negeri Jakarta - Jakarta.pdf')" class="text-blue-400 text-sm font-semibold mt-2 inline-block hover:underline">View Credential</a>
+                        </div>
+                    </div>
+                    <!-- Pengalaman Organisasi -->
+                    <div class="bg-gray-800 p-6 rounded-lg flex flex-col sm:flex-row items-center sm:space-x-6 text-center sm:text-left">
+                        <img src="img/Hima.png" alt="HIMA RPL Logo" class="w-20 h-20 object-contain mb-4 sm:mb-0">
+                        <div>
+                            <h3 class="font-bold text-lg text-white">Koordinator Divisi Media dan Informasi</h3>
+                            <p class="text-gray-400">Himpunan Mahasiswa RPL UBSI</p>
+                            <a href="javascript:void(0)" onclick="openModal('HIMA Reza Rabbani.pdf')" class="text-blue-400 text-sm font-semibold mt-2 inline-block hover:underline">View Award Charter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section id="contact" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title text-3xl font-bold text-center mb-4">Get In Touch</h2>
+                <p class="text-gray-300 max-w-xl mx-auto mb-8">
+                    I'm currently open to new opportunities and collaborations. Feel free to reach out if you have a project in mind or just want to say hi!
+                </p>
+                <a href="mailto:rezarabbani1007@gmail.com" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block">
+                    Say Hello
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.linkedin.com/in/reza-rabbani-rachim-a84a81270" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400"><i data-feather="linkedin"></i></a>
+                <a href="#" class="hover:text-blue-400"><i data-feather="briefcase"></i></a>
+                <a href="mailto:rezarabbani1007@gmail.com" class="hover:text-blue-400"><i data-feather="mail"></i></a>
+            </div>
+            <p>&copy; 2025 Reza Rabbani Rachim. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- ===== MODAL POP-UP STRUCTURE ===== -->
+    <div id="certificateModal" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50 p-4">
+        <div class="bg-gray-800 p-2 rounded-lg max-w-4xl max-h-[90vh] w-full flex flex-col relative">
+            <button id="closeModalButton" class="absolute -top-3 -right-3 bg-blue-500 text-white rounded-full h-8 w-8 flex items-center justify-center hover:bg-blue-600 z-10">
+                <i data-feather="x" class="w-6 h-6"></i>
+            </button>
+            <div class="flex-grow mt-4">
+                 <iframe id="modalContent" class="w-full h-[80vh]" src=""></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Inisialisasi Feather Icons
+        feather.replace();
+
+        // Menu Mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+        document.querySelectorAll('#mobile-menu a').forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); }); });
+        
+        // Header Shadow on Scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => { if (window.scrollY > 50) { header.classList.add('shadow-lg'); } else { header.classList.remove('shadow-lg'); } });
+
+        // Modal (Popup) Logic
+        const modal = document.getElementById('certificateModal');
+        const closeModalButton = document.getElementById('closeModalButton');
+        const modalContent = document.getElementById('modalContent');
+
+        function openModal(pdfSrc) {
+            modalContent.setAttribute('src', pdfSrc);
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            modalContent.setAttribute('src', ''); // Hentikan loading PDF saat ditutup
+        }
+
+        closeModalButton.addEventListener('click', closeModal);
+        // Menutup modal jika klik di luar area konten
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
